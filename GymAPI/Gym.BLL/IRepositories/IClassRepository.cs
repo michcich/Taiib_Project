@@ -4,5 +4,6 @@ namespace Gym.BLL.IRepositories
 {
     public interface IClassRepository : IRepository<Class>
     {
+        Task<List<Class>> GetClassesByGymId(int GymId);
     }
 }

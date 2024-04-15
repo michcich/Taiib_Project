@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "awVOnZ+nKjQleDl3qSP6PYgWtpYGf3QCm9Ht2G87Z3jZmj5kPaCejritW47jJLjziT1NQlwOCt0QRYwhEnXrhA==",
+  "dgSpecHash": "ouDVJv35E8E49EXolriVd2WSEANGvgzEiyMMkQ9l1TIBHOiWrvNdlrisNaDM0/EJS0ua/0/a+O6agDY6L7a+Ww==",
   "success": true,
   "projectFilePath": "D:\\dev\\source\\repos\\Taiib_Project\\GymAPI\\Gym.BLL_EF\\Gym.BLL_EF.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Radek\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\Radek\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\Radek\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
     "C:\\Users\\Radek\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\8.0.4\\microsoft.aspnetcore.cryptography.internal.8.0.4.nupkg.sha512",
