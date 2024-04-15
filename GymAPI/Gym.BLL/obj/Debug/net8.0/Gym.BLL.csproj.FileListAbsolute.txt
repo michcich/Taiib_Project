@@ -1,0 +1,16 @@
+D:\dev\source\repos\Taiib_Project\GymAPI\Gym.BLL\bin\Debug\net8.0\Gym.BLL.deps.json
+D:\dev\source\repos\Taiib_Project\GymAPI\Gym.BLL\bin\Debug\net8.0\Gym.BLL.dll
+D:\dev\source\repos\Taiib_Project\GymAPI\Gym.BLL\bin\Debug\net8.0\Gym.BLL.pdb
+D:\dev\source\repos\Taiib_Project\GymAPI\Gym.BLL\obj\Debug\net8.0\Gym.BLL.GeneratedMSBuildEditorConfig.editorconfig
+D:\dev\source\repos\Taiib_Project\GymAPI\Gym.BLL\obj\Debug\net8.0\Gym.BLL.AssemblyInfoInputs.cache
+D:\dev\source\repos\Taiib_Project\GymAPI\Gym.BLL\obj\Debug\net8.0\Gym.BLL.AssemblyInfo.cs
+D:\dev\source\repos\Taiib_Project\GymAPI\Gym.BLL\obj\Debug\net8.0\Gym.BLL.csproj.CoreCompileInputs.cache
+D:\dev\source\repos\Taiib_Project\GymAPI\Gym.BLL\obj\Debug\net8.0\Gym.BLL.sourcelink.json
+D:\dev\source\repos\Taiib_Project\GymAPI\Gym.BLL\obj\Debug\net8.0\Gym.BLL.dll
+D:\dev\source\repos\Taiib_Project\GymAPI\Gym.BLL\obj\Debug\net8.0\refint\Gym.BLL.dll
+D:\dev\source\repos\Taiib_Project\GymAPI\Gym.BLL\obj\Debug\net8.0\Gym.BLL.pdb
+D:\dev\source\repos\Taiib_Project\GymAPI\Gym.BLL\obj\Debug\net8.0\ref\Gym.BLL.dll
+D:\dev\source\repos\Taiib_Project\GymAPI\Gym.BLL\bin\Debug\net8.0\Gym.Model.dll
+D:\dev\source\repos\Taiib_Project\GymAPI\Gym.BLL\bin\Debug\net8.0\Gym.Model.pdb
+D:\dev\source\repos\Taiib_Project\GymAPI\Gym.BLL\obj\Debug\net8.0\Gym.BLL.csproj.AssemblyReference.cache
+D:\dev\source\repos\Taiib_Project\GymAPI\Gym.BLL\obj\Debug\net8.0\Gym.BLL.csproj.CopyComplete
