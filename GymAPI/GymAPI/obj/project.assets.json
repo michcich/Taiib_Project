@@ -5003,24 +5003,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Radek\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\micha\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\dev\\source\\repos\\Taiib_Project\\GymAPI\\GymAPI\\GymAPI.csproj",
+      "projectUniqueName": "C:\\Users\\micha\\Desktop\\ProjekTaiib\\Taiib_Project\\GymAPI\\GymAPI\\GymAPI.csproj",
       "projectName": "GymAPI",
-      "projectPath": "D:\\dev\\source\\repos\\Taiib_Project\\GymAPI\\GymAPI\\GymAPI.csproj",
-      "packagesPath": "C:\\Users\\Radek\\.nuget\\packages\\",
-      "outputPath": "D:\\dev\\source\\repos\\Taiib_Project\\GymAPI\\GymAPI\\obj\\",
+      "projectPath": "C:\\Users\\micha\\Desktop\\ProjekTaiib\\Taiib_Project\\GymAPI\\GymAPI\\GymAPI.csproj",
+      "packagesPath": "C:\\Users\\micha\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\micha\\Desktop\\ProjekTaiib\\Taiib_Project\\GymAPI\\GymAPI\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Radek\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\micha\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5028,18 +5023,17 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\dev\\source\\repos\\Taiib_Project\\GymAPI\\Gym.BLL_EF\\Gym.BLL_EF.csproj": {
-              "projectPath": "D:\\dev\\source\\repos\\Taiib_Project\\GymAPI\\Gym.BLL_EF\\Gym.BLL_EF.csproj"
+            "C:\\Users\\micha\\Desktop\\ProjekTaiib\\Taiib_Project\\GymAPI\\Gym.BLL_EF\\Gym.BLL_EF.csproj": {
+              "projectPath": "C:\\Users\\micha\\Desktop\\ProjekTaiib\\Taiib_Project\\GymAPI\\Gym.BLL_EF\\Gym.BLL_EF.csproj"
             },
-            "D:\\dev\\source\\repos\\Taiib_Project\\GymAPI\\Gym.DAL\\Gym.DAL.csproj": {
-              "projectPath": "D:\\dev\\source\\repos\\Taiib_Project\\GymAPI\\Gym.DAL\\Gym.DAL.csproj"
+            "C:\\Users\\micha\\Desktop\\ProjekTaiib\\Taiib_Project\\GymAPI\\Gym.DAL\\Gym.DAL.csproj": {
+              "projectPath": "C:\\Users\\micha\\Desktop\\ProjekTaiib\\Taiib_Project\\GymAPI\\Gym.DAL\\Gym.DAL.csproj"
             }
           }
         }
@@ -5048,6 +5042,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -5084,7 +5083,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
