@@ -23,6 +23,12 @@ namespace Gym.BLL_EF
 
 
             services.AddScoped<IClassService, ClassService>();
+            services.AddScoped<IClubService, ClubService>();
+            services.AddScoped<IClubTicketTypeService, ClubTicketTypeService>();
+            services.AddScoped<IReservationService, ReservationService>();
+            services.AddScoped<ITicketService, TicketService>();
+            services.AddScoped<ITicketTypeService, TicketTypeService>();
+            services.AddScoped<IUserPaymentService, UserPaymentService>();
 
             services.AddAutoMapper(assembly);
 

@@ -4,5 +4,7 @@ namespace Gym.BLL.IRepositories
 {
     public interface IClubTicketTypeRepository : IRepository<ClubTicketType>
     {
+        Task<List<ClubTicketType>> GetClubTicketTypesByClubId(int clubId);
+        Task<List<ClubTicketType>> GetAllAsync();
     }
 }
