@@ -1,14 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Gym.BLL.Dto
+﻿namespace Gym.BLL.Dto.Classes
 {
-    public class ClassDto
+    public class ClassRequestDto
     {
-        public int Id { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
         public int Slots { get; set; }

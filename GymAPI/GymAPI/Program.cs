@@ -13,7 +13,6 @@ builder.Services.AddBLL();
 builder.Services.AddDAL(connectionString);
 
 builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 

@@ -4,12 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Gym.BLL.Dto
+namespace Gym.BLL.Dto.TicketType
 {
-    public class UserPaymentDto
+    public class TicketTypeResponseDto
     {
         public int Id { get; set; }
-        public double Price { get; set; }
-        public string UserId { get; set; }
+        public string Name { get; set; }
+        public string Description { get; set; }
     }
 }

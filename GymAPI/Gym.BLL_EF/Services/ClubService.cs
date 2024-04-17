@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using Gym.BLL.Dto;
+using Gym.BLL.Dto.Club;
 using Gym.BLL.IRepositories;
 using Gym.BLL.IServices;
 using Gym.Model.Models;
@@ -22,7 +23,7 @@ namespace Gym.BLL_EF.Services
             _mapper = mapper;
         }
 
-        public async Task AddClub(ClubDto clubDto)
+        public async Task AddClub(ClubRequestDto clubDto)
         {
             var club = _mapper.Map<Club>(clubDto);
             await _clubRepository.CreateAsync(club);
@@ -37,21 +38,21 @@ namespace Gym.BLL_EF.Services
             }
         }
 
-        public async Task<List<ClubDto>> GetAllClubs()
+        public async Task<List<ClubResponseDto>> GetAllClubs(PageProperties pageProperties)
         {
-            var clubs = await _clubRepository.GetAllAsync();
-            return _mapper.Map<List<ClubDto>>(clubs);
+            var clubs = await _clubRepository.GetAllAsync(pageProperties);
+            return _mapper.Map<List<ClubResponseDto>>(clubs);
         }
 
-        public async Task<ClubDto> GetClubById(int id)
+        public async Task<ClubResponseDto> GetClubById(int id)
         {
             var club = await _clubRepository.GetClubByIdAsync(id);
-            return _mapper.Map<ClubDto>(club);
+            return _mapper.Map<ClubResponseDto>(club);
         }
 
-        public async Task UpdateClub(ClubDto clubDto)
+        public async Task UpdateClub(int clubId, ClubRequestDto clubDto)
         {
-            var club = await _clubRepository.GetByIdAsync(clubDto.Id);
+            var club = await _clubRepository.GetByIdAsync(clubId);
             if (club != null)
             {
                 _mapper.Map(clubDto, club);

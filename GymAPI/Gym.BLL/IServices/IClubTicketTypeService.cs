@@ -1,4 +1,4 @@
-﻿using Gym.BLL.Dto;
+﻿using Gym.BLL.Dto.ClubTicketType;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,10 +9,10 @@ namespace Gym.BLL.IServices
 {
     public interface IClubTicketTypeService
     {
-        Task AddClubTicketType(ClubTicketTypeDto clubTicketTypeDto);
-        Task<List<ClubTicketTypeDto>> GetClubTicketTypesByClubId(int clubId);
-        Task<List<ClubTicketTypeDto>> GetAllClubTicketTypes();
-        Task UpdateClubTicketType(ClubTicketTypeDto clubTicketTypeDto);
+        Task AddClubTicketType(ClubTicketTypeRequestDto clubTicketTypeDto);
+        Task<List<ClubTicketTypeResponseDto>> GetClubTicketTypesByClubId(int clubId);
+        Task<List<ClubTicketTypeResponseDto>> GetAllClubTicketTypes();
+        Task UpdateClubTicketType(int id, ClubTicketTypeRequestDto clubTicketTypeDto);
         Task DeleteClubTicketType(int id);
     }
 }

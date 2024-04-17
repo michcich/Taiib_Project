@@ -12,13 +12,13 @@ namespace Gym.BLL_EF.Repositories
             _context = context;
         }
 
-        public async Task CreateAsync(T entity)
+        public virtual async Task CreateAsync(T entity)
         {
             await _context.Set<T>().AddAsync(entity);
             await _context.SaveChangesAsync();
         }
 
-        public async void Delete(T entity)
+        public virtual async void Delete(T entity)
         {
             _context.Set<T>().Remove(entity);
             await _context.SaveChangesAsync();
@@ -29,7 +29,7 @@ namespace Gym.BLL_EF.Repositories
             return await _context.Set<T>().FindAsync(id);
         }
 
-        public async void Update(T entity)
+        public virtual async void Update(T entity)
         {
             _context.Set<T>().Update(entity);
             await _context.SaveChangesAsync();

@@ -1,12 +1,13 @@
 ﻿using Gym.BLL.Dto;
+using Gym.BLL.Dto.Classes;
 
 namespace Gym.BLL.IServices
 {
     public interface IClassService
     {
-        Task AddClass(ClassDto classDto);
+        Task AddClass(ClassRequestDto classDto);
         void DeleteClass(int id);
-        void UpdateClass(ClassDto classDto);
-        Task<List<ClassDto>> GetClasses(int ClubId);
+        void UpdateClass(int classId, ClassRequestDto classDto);
+        Task<List<ClassResponseDto>> GetClasses(int clubId, PageProperties pageProperties);
     }
 }

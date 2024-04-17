@@ -4,11 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Gym.BLL.Dto
+namespace Gym.BLL.Dto.ClubTicketType
 {
-    public class ClubTicketTypeDto
+    public class ClubTicketTypeRequestDto
     {
-        public int Id { get; set; }
         public int ClubId { get; set; }
         public int TicketTypeId { get; set; }
     }

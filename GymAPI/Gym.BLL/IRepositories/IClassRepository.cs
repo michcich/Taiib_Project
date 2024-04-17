@@ -1,9 +1,10 @@
-﻿using Gym.Model.Models;
+﻿using Gym.BLL.Dto;
+using Gym.Model.Models;
 
 namespace Gym.BLL.IRepositories
 {
     public interface IClassRepository : IRepository<Class>
     {
-        Task<List<Class>> GetClassesByGymId(int GymId);
+        Task<List<Class>> GetClassesByGymId(int GymId, PageProperties pageProperties);
     }
 }

@@ -1,7 +1,8 @@
 ﻿using AutoMapper;
-using Gym.BLL.Dto;
+using Gym.BLL.Dto.TicketType;
 using Gym.BLL.IRepositories;
 using Gym.BLL.IServices;
+using Gym.Model.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,6 +22,12 @@ namespace Gym.BLL_EF.Services
             _mapper = mapper;
         }
 
+        public async void AddTicketType(TicketTypeRequestDto ticketTypeDto)
+        {
+            var ticket = _mapper.Map<TicketType>(ticketTypeDto);
+            await _ticketTypeRepository.CreateAsync(ticket);
+        }
+
         public async Task DeleteTicketType(int id)
         {
             var ticketType = await _ticketTypeRepository.GetByIdAsync(id);
@@ -30,21 +37,21 @@ namespace Gym.BLL_EF.Services
             }
         }
 
-        public async Task<List<TicketTypeDto>> GetAllTicketTypes()
+        public async Task<List<TicketTypeResponseDto>> GetAllTicketTypes()
         {
             var ticketTypes = await _ticketTypeRepository.GetAllAsync();
-            return _mapper.Map<List<TicketTypeDto>>(ticketTypes);
+            return _mapper.Map<List<TicketTypeResponseDto>>(ticketTypes);
         }
 
-        public async Task<TicketTypeDto> GetTicketTypeById(int id)
+        public async Task<TicketTypeResponseDto> GetTicketTypeById(int id)
         {
             var ticketType = await _ticketTypeRepository.GetTicketTypeByIdAsync(id);
-            return _mapper.Map<TicketTypeDto>(ticketType);
+            return _mapper.Map<TicketTypeResponseDto>(ticketType);
         }
 
-        public async Task UpdateTicketType(TicketTypeDto ticketTypeDto)
+        public async Task UpdateTicketType(int id, TicketTypeRequestDto ticketTypeDto)
         {
-            var ticketType = await _ticketTypeRepository.GetByIdAsync(ticketTypeDto.Id);
+            var ticketType = await _ticketTypeRepository.GetByIdAsync(id);
             if (ticketType != null)
             {
                 _mapper.Map(ticketTypeDto, ticketType);

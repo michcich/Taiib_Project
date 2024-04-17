@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using Gym.BLL.Dto;
+using Gym.BLL.Dto.Classes;
 using Gym.BLL.IRepositories;
 using Gym.BLL.IServices;
 using Gym.Model.Models;
@@ -22,7 +23,7 @@ namespace Gym.BLL_EF.Services
             _mapper = mapper;
         }
 
-        public async Task AddClass(ClassDto classDto)
+        public async Task AddClass(ClassRequestDto classDto)
         {
             var cls = _mapper.Map<Class>(classDto);
             await _classRepository.CreateAsync(cls);
@@ -37,9 +38,9 @@ namespace Gym.BLL_EF.Services
             }
         }
 
-        public async void UpdateClass(ClassDto classDto)
+        public async void UpdateClass(int classId, ClassRequestDto classDto)
         {
-            var cl = await _classRepository.GetByIdAsync(classDto.Id);
+            var cl = await _classRepository.GetByIdAsync(classId);
             if (cl != null)
             {
                 _mapper.Map(classDto, cl);
@@ -47,10 +48,10 @@ namespace Gym.BLL_EF.Services
             }
         }
 
-        async Task<List<ClassDto>> IClassService.GetClasses(int ClubId)
+        public async Task<List<ClassResponseDto>> GetClasses(int clubId, PageProperties pageProperties)
         {
-            var list = await _classRepository.GetClassesByGymId(ClubId);
-            return _mapper.Map<List<ClassDto>>(list);
+            var list = await _classRepository.GetClassesByGymId(clubId, pageProperties);
+            return _mapper.Map<List<ClassResponseDto>>(list);
         }
     }
 }

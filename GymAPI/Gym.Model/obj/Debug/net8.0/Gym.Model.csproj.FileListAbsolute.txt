@@ -11,3 +11,16 @@ D:\dev\source\repos\Taiib_Project\GymAPI\Gym.Model\obj\Debug\net8.0\Gym.Model.dl
 D:\dev\source\repos\Taiib_Project\GymAPI\Gym.Model\obj\Debug\net8.0\refint\Gym.Model.dll
 D:\dev\source\repos\Taiib_Project\GymAPI\Gym.Model\obj\Debug\net8.0\Gym.Model.pdb
 D:\dev\source\repos\Taiib_Project\GymAPI\Gym.Model\obj\Debug\net8.0\ref\Gym.Model.dll
+D:\dev\source\Taiib_Project\GymAPI\Gym.Model\bin\Debug\net8.0\Gym.Model.deps.json
+D:\dev\source\Taiib_Project\GymAPI\Gym.Model\bin\Debug\net8.0\Gym.Model.dll
+D:\dev\source\Taiib_Project\GymAPI\Gym.Model\bin\Debug\net8.0\Gym.Model.pdb
+D:\dev\source\Taiib_Project\GymAPI\Gym.Model\obj\Debug\net8.0\Gym.Model.csproj.AssemblyReference.cache
+D:\dev\source\Taiib_Project\GymAPI\Gym.Model\obj\Debug\net8.0\Gym.Model.GeneratedMSBuildEditorConfig.editorconfig
+D:\dev\source\Taiib_Project\GymAPI\Gym.Model\obj\Debug\net8.0\Gym.Model.AssemblyInfoInputs.cache
+D:\dev\source\Taiib_Project\GymAPI\Gym.Model\obj\Debug\net8.0\Gym.Model.AssemblyInfo.cs
+D:\dev\source\Taiib_Project\GymAPI\Gym.Model\obj\Debug\net8.0\Gym.Model.csproj.CoreCompileInputs.cache
+D:\dev\source\Taiib_Project\GymAPI\Gym.Model\obj\Debug\net8.0\Gym.Model.sourcelink.json
+D:\dev\source\Taiib_Project\GymAPI\Gym.Model\obj\Debug\net8.0\Gym.Model.dll
+D:\dev\source\Taiib_Project\GymAPI\Gym.Model\obj\Debug\net8.0\refint\Gym.Model.dll
+D:\dev\source\Taiib_Project\GymAPI\Gym.Model\obj\Debug\net8.0\Gym.Model.pdb
+D:\dev\source\Taiib_Project\GymAPI\Gym.Model\obj\Debug\net8.0\ref\Gym.Model.dll

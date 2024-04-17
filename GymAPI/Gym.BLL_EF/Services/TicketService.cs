@@ -1,5 +1,5 @@
 ﻿using AutoMapper;
-using Gym.BLL.Dto;
+using Gym.BLL.Dto.Ticket;
 using Gym.BLL.IRepositories;
 using Gym.BLL.IServices;
 using Gym.Model.Models;
@@ -22,21 +22,21 @@ namespace Gym.BLL_EF.Services
             _mapper = mapper;
         }
 
-        public async Task AddTicket(TicketDto ticketDto)
+        public async Task AddTicket(TicketRequestDto ticketDto)
         {
             var ticket = _mapper.Map<Ticket>(ticketDto);
             await _ticketRepository.CreateAsync(ticket);
         }
 
-        public async Task<List<TicketDto>> GetTicketsByTicketTypeId(int ticketTypeId)
+        public async Task<List<TicketResponseDto>> GetTicketsByTicketTypeId(int ticketTypeId)
         {
             var tickets = await _ticketRepository.GetTicketsByTicketTypeId(ticketTypeId);
-            return _mapper.Map<List<TicketDto>>(tickets);
+            return _mapper.Map<List<TicketResponseDto>>(tickets);
         }
 
-        public async Task UpdateTicket(TicketDto ticketDto)
+        public async Task UpdateTicket(int id, TicketRequestDto ticketDto)
         {
-            var ticket = await _ticketRepository.GetByIdAsync(ticketDto.Id);
+            var ticket = await _ticketRepository.GetByIdAsync(id);
             if (ticket != null)
             {
                 _mapper.Map(ticketDto, ticket);

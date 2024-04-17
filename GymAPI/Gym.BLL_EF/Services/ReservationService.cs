@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using Gym.BLL.Dto;
+using Gym.BLL.Dto.Reservation;
 using Gym.BLL.IRepositories;
 using Gym.BLL.IServices;
 using Gym.Model.Models;
@@ -22,22 +23,22 @@ namespace Gym.BLL_EF.Services
             _mapper = mapper;
         }
 
-        public async Task AddReservation(ReservationDto reservationDto)
+        public async Task AddReservation(ReservationRequestDto reservationDto)
         {
             var reservation = _mapper.Map<Reservation>(reservationDto);
             await _reservationRepository.CreateAsync(reservation);
         }
 
-        public async Task<List<ReservationDto>> GetReservationsByUserId(string userId)
+        public async Task<List<ReservationResponseDto>> GetReservationsByUserId(string userId, PageProperties pageProperties)
         {
-            var reservations = await _reservationRepository.GetReservationsByUserId(userId);
-            return _mapper.Map<List<ReservationDto>>(reservations);
+            var reservations = await _reservationRepository.GetReservationsByUserId(userId, pageProperties);
+            return _mapper.Map<List<ReservationResponseDto>>(reservations);
         }
 
-        public async Task<List<ReservationDto>> GetReservationsByClassId(int classId)
+        public async Task<List<ReservationResponseDto>> GetReservationsByClassId(int classId, PageProperties pageProperties)
         {
-            var reservations = await _reservationRepository.GetReservationsByClassId(classId);
-            return _mapper.Map<List<ReservationDto>>(reservations);
+            var reservations = await _reservationRepository.GetReservationsByClassId(classId, pageProperties);
+            return _mapper.Map<List<ReservationResponseDto>>(reservations);
         }
 
 

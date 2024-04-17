@@ -1,4 +1,4 @@
-﻿using Gym.BLL.Dto;
+﻿using Gym.BLL.Dto.UserPayment;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,7 +9,7 @@ namespace Gym.BLL.IServices
 {
     public interface IUserPaymentService
     {
-        Task AddUserPayment(UserPaymentDto userPaymentDto);
-        Task<List<UserPaymentDto>> GetUserPaymentsByUserId(string userId);
+        Task AddUserPayment(UserPaymentRequestDto userPaymentDto);
+        Task<List<UserPaymentResponseDto>> GetUserPaymentsByUserId(string userId);
     }
 }

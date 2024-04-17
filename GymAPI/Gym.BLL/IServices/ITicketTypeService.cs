@@ -1,4 +1,4 @@
-﻿using Gym.BLL.Dto;
+﻿using Gym.BLL.Dto.TicketType;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,9 +9,10 @@ namespace Gym.BLL.IServices
 {
     public interface ITicketTypeService
     {
-        Task<List<TicketTypeDto>> GetAllTicketTypes();
-        Task<TicketTypeDto> GetTicketTypeById(int id);
-        Task UpdateTicketType(TicketTypeDto ticketTypeDto);
+        void AddTicketType(TicketTypeRequestDto ticketTypeDto);
+        Task<List<TicketTypeResponseDto>> GetAllTicketTypes();
+        Task<TicketTypeResponseDto> GetTicketTypeById(int id);
+        Task UpdateTicketType(int id, TicketTypeRequestDto ticketTypeDto);
         Task DeleteTicketType(int id);
     }
 }

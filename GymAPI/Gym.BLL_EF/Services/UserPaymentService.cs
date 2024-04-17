@@ -1,5 +1,5 @@
 ﻿using AutoMapper;
-using Gym.BLL.Dto;
+using Gym.BLL.Dto.UserPayment;
 using Gym.BLL.IRepositories;
 using Gym.BLL.IServices;
 using Gym.Model.Models;
@@ -22,16 +22,16 @@ namespace Gym.BLL_EF.Services
             _mapper = mapper;
         }
 
-        public async Task AddUserPayment(UserPaymentDto userPaymentDto)
+        public async Task AddUserPayment(UserPaymentRequestDto userPaymentDto)
         {
             var userPayment = _mapper.Map<UserPayment>(userPaymentDto);
             await _userPaymentRepository.CreateAsync(userPayment);
         }
 
-        public async Task<List<UserPaymentDto>> GetUserPaymentsByUserId(string userId)
+        public async Task<List<UserPaymentResponseDto>> GetUserPaymentsByUserId(string userId)
         {
             var userPayments = await _userPaymentRepository.GetUserPaymentsByUserId(userId);
-            return _mapper.Map<List<UserPaymentDto>>(userPayments);
+            return _mapper.Map<List<UserPaymentResponseDto>>(userPayments);
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿using Gym.BLL.IRepositories;
+﻿using Gym.BLL.Dto;
+using Gym.BLL.IRepositories;
 using Gym.DAL.Context;
 using Gym.Model.Models;
 using Microsoft.EntityFrameworkCore;
@@ -14,9 +15,13 @@ namespace Gym.BLL_EF.Repositories
             _context = context;
         }
 
-        public async Task<List<Club>> GetAllAsync()
+        public async Task<List<Club>> GetAllAsync(PageProperties pageProperties)
         {
-            return await _context.Gyms.ToListAsync();
+            int offset = pageProperties.PageNumber - 1 * pageProperties.PageSize;
+            return await _context.Gyms
+                .Skip(offset)
+                .Take(pageProperties.PageSize)
+                .ToListAsync();
         }
 
         public async Task<Club> GetClubByIdAsync(int id)
